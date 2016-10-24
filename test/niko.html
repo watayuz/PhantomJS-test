@@ -1,0 +1,160 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="copyright" content="&copy; DWANGO Co., Ltd.">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta property="og:title" content="niconico">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="niconicoはドワンゴが運営する日本最大級の動画サービスです。ニコニコ動画やニコニコ生放送、ニコニコ静画など、ゲームや音楽、エンターテイメントは全てniconicoで！">
+    <meta property="og:url" content="http://www.nicovideo.jp/">
+    <meta property="og:image" content="https://account.nicovideo.jp/assets/images/ogp/niconico.png">
+    <meta property="og:site_name" content="niconico">
+    <title>
+      ログイン - niconico</title>
+    
+      <link rel="stylesheet" href="/assets/public/css/login/login_form.css">
+    
+    <link rel="shortcut icon" type="image/ico" href="/assets/public/img/base/favicon.ico">
+    <script src="/assets/public/js/lib/fingerprint.js" type="text/javascript"></script>
+    <script src="/assets/public/js/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/assets/public/js/lib/html5shiv.min.js" type="text/javascript"></script>
+    <script src="/assets/public/js/login/ui.js" type="text/javascript"></script>
+    <script src="/assets/public/js/api-client.js" type="text/javascript"></script>
+  </head>
+  <body class="ja-jp">
+  
+  <header role="banner" class="header">
+  
+    <h1 class="header__title">
+        <a href="http://www.nicovideo.jp/">
+            <img src="/assets/images/logo/logo_niconico.png" alt="niconico">
+        </a>
+    </h1>
+  
+  </header>
+  <div class="contents">
+    <div role="main" class="main ins__ads login">
+      <header class="contents-header border-around">
+        <h1 class="contents-header__title">ログイン</h1>
+      </header>
+      
+
+
+      <div class="contents-body">
+
+        
+        <div class="row form-group border-around login-form round border-em-around shadow-around">
+          
+<form action="/api/v1/login?show_button_twitter=1&site=niconico&show_button_facebook=1&next_url=" method="POST" id="login_form">
+    
+            <p class="input-group">
+              <label class="input-group__label">メールアドレスまたは電話番号</label>
+              <input id="input__mailtel" type="text" name="mail_tel" value="">
+            </p>
+            <p class="input-group neighbor">
+              <label class="input-group__label">パスワード</label>
+              <input id="input__password" type="password" name="password">
+            </p>
+            <p class="button-wrap neighbor">
+              <input id="login__submit" type="submit" value="ログイン" class="button button-primary round shadow-around">
+            </p>
+          
+</form>
+
+          
+            <p class="text-muted">パスワードを忘れた方は<a href="/password/reset" class="text-link">再発行の手続き</a>へ</p>
+          
+        </div>
+
+        
+          
+            <div class="row sns-group">
+              <p class="text-description">下記サービスアカウントでのログインはこちら</p>
+              <div class="button-wrap">
+              
+                <p class="button-container"><a href="/login/linkages/twitter/authorize?site=niconico&amp;next_url=" class="button btn-tw" id="twitter__login" title="Twitterでログイン">Twitterでログイン</a></p>
+              
+              
+                <p class="button-container"><a href="/login/linkages/facebook/authorize?site=niconico&amp;next_url=" class="button btn-fb" id="facebook__login" title="Facebookでログイン">Facebookでログイン</a></p>
+              
+              
+              
+                <p class="button-container"><a href="/login/linkages/nintendo/authorize?site=niconico&amp;next_url=" class="button btn-nnid" id="nnid__login" title="ニンテンドーネットワークIDでログイン">ニンテンドーネットワークIDでログイン</a></p>
+              
+              
+                <p class="button-container"><a href="/login/linkages/google_plus/authorize?site=niconico&amp;next_url=" class="button btn-ggl" id="google_plus__login" title="Googleでログイン">Googleでログイン</a></p>
+              
+              
+                <p class="button-container"><a href="/login/linkages/line/authorize?site=niconico&amp;next_url=" class="button btn-line" id="line__login" title="LINEでログイン">LINEでログイン</a></p>
+              
+              
+              </div>
+            </div>
+          
+          <div class="row signup">
+            <p class="button-wrap">
+              <a href="/register?site=niconico&next_url=&from=login" class="button button-signup round weight shadow-around">
+                <span>はじめての方は登録手続きへお進みください。</span>
+                <span class="text-button">新規会員登録</span>
+              </a>
+            </p>
+          </div>
+        
+        
+        
+          <div class="row ads">
+            
+            
+              <iframe src="https://ads.nicovideo.jp/?zoneid=124&type=nicoLogin" allowTransparency="true" scrolling="no" frameborder="0" hspace="0" marginheight="0" marginwidth="0" vspace="0" noresize><img src="/assets/images/login-form/dummy_ads.gif" alt="" /></iframe>
+            
+          </div>
+        
+      
+      </div>
+    </div>
+  </div>
+  <footer role="contentinfo" class="footer">
+    <div class="certMarkContainer">
+      <div class="certMark">
+        <script type="text/javascript" src="https://trusted-web-seal.cybertrust.ne.jp/seal/getScript?host_name=account.nicovideo.jp&amp;type=31"></script>
+      </div>
+      <p class="certificate">
+        
+          このサイトは、サイバートラストの <a href="https://www.cybertrust.ne.jp/SureServer/" target="_blank">サーバ証明書</a> により実在性が認証されています。<br>また、SSLページは通信が暗号化されプライバシーが守られています。
+        
+        
+      </p>
+    </div>
+    <div class="campaignBannerContainer">
+      
+        <a href="https://www.jpcert.or.jp/pr/2016/pr160003.html" target="_blank">
+          <img src="assets/images/login-form/stop240_110_nasi.png" alt="">
+        </a>
+      
+      
+    </div>
+    <p class="copyright"><small>&copy; DWANGO Co., Ltd.</small></p>
+  </footer>
+
+  
+  <script>
+  $(function(){
+    $('<input>').attr({
+      type: 'hidden',
+      
+      name: 'auth_id',
+      value: new Fingerprint({canvas: true}).get(),
+    }).appendTo($('#login_form'));
+  });
+  </script>
+
+  </body>
+</html>
+
